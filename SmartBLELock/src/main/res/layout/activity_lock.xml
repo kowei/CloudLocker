@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LockActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="60sp">
+
+        <RelativeLayout
+            android:id="@+id/keypad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true">
+
+            <Button
+                android:id="@+id/k1"
+                android:tag="@string/k1"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k1"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k2"
+                android:tag="@string/k2"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k1"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k2"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k3"
+                android:tag="@string/k3"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k2"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k3"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k4"
+                android:tag="@string/k4"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k1"
+                android:layout_margin="5sp"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k4"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k5"
+                android:tag="@string/k5"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k2"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k4"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k5"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k6"
+                android:tag="@string/k6"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k3"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k5"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k6"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k7"
+                android:tag="@string/k7"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k4"
+                android:layout_margin="5sp"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k7"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k8"
+                android:tag="@string/k8"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k5"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k7"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k8"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k9"
+                android:tag="@string/k9"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k6"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k8"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k9"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/kasterisk"
+                android:tag="@string/kasterisk"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k7"
+                android:layout_margin="5sp"
+                android:background="@drawable/keypad"
+                android:elegantTextHeight="true"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/kasterisk"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/k0"
+                android:tag="@string/k0"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k8"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/kasterisk"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/k0"
+                android:textSize="30sp" />
+
+            <Button
+                android:id="@+id/kpound"
+                android:tag="@string/kpound"
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:layout_below="@+id/k9"
+                android:layout_margin="5sp"
+                android:layout_toEndOf="@+id/k0"
+                android:background="@drawable/keypad"
+                android:gravity="center"
+                android:padding="10sp"
+                android:text="@string/kpound"
+                android:textSize="30sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/keypadCover"
+        android:layout_width="match_parent"
+        android:background="@color/cover"
+        android:layout_height="match_parent">
+
+    </RelativeLayout>
+</FrameLayout>
